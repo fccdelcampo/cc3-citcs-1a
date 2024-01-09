@@ -117,7 +117,7 @@ def main():
                                 print("Withdrawal failed. Current balance is less than withdrawal amount.")
                                 print(border)
                         else:
-                            print("Deposit failed.")
+                            print("Withdrawal failed.")
                     else:
                         print("You entered the wrong PIN. Try again.")
                 elif transaction == '3':
