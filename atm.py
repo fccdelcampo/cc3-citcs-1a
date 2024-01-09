@@ -1,5 +1,5 @@
 # ATM Program
-# By: Francis Carlo Del Campo
+# By: Francis Carlo Del Campo (CITCS-1A)
 # CC3 - Object-Oriented Programming
 
 border = "=================================================="
