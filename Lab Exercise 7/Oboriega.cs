@@ -313,7 +313,7 @@ public class Character
 ██║  ██╗██║███████╗███████╗███████╗██████╔╝    ▀═╝╚██╗               
 ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝╚═════╝         ╚═╝                                                                                                                               
         ");
-            string? option;
+            string option;
             // Ask the player if they want to play the game again and process their input
             Console.Write("Would you like to play the game again? Y/N");
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
@@ -361,7 +361,7 @@ public class Character
 public class Enemies
 {
     // Declaring attributes of Enemies class
-    public string? name;
+    public string name;
     public int health;
     public int damage;
     public int speed;
@@ -395,7 +395,7 @@ public class Program
     public static string AskName()
     {
         // Processes user input and re-prompts them to give their name if they give an empty name
-        string? input = "";
+        string input = "";
         do 
         {
             Console.Write("Enter your name -> ");
@@ -436,7 +436,7 @@ public class Program
 
     public static string AskGameOption(Character player)
     {
-        string? option = "";
+        string option = "";
         // Asks player of the option they want to explore
         Console.WriteLine($"Good luck, {player.job} {player.name}. Choose the following options: \n    1: to play the game \n    2: to see your stats \n    3: to exit the game");
         do
@@ -452,7 +452,7 @@ public class Program
 
     public static void AskMove(Maze maze, Character player, Enemies enemy, int mode)
     {
-        string? move = "";
+        string move = "";
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
         // If mode is 1, option to attack is available
         if (mode == 1)
@@ -642,7 +642,7 @@ public class Program
             GenerateEnemies(maze, enemy);
 
             // Ask player of their game option
-            string? option = AskGameOption(player);
+            string option = AskGameOption(player);
 
             // Process option and execute  necessary actions
             switch(option)
